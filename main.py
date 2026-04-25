@@ -20,7 +20,6 @@ while cap.isOpened():
         print("Falha ao capturar imagem.")
         break
 
-    # CONSERTO: Este bloco agora está FORA do 'if not success'
     # Converter cor de BGR para RGB
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     results = hands.process(img_rgb)
